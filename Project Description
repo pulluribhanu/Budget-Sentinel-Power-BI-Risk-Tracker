@@ -1,0 +1,40 @@
+Project Name:
+"Budget Sentinel: Power BI Risk Tracker"
+
+Project Description:
+This project aims to design a data-driven dashboard system that identifies departments and projects at risk of exceeding budgets or underperforming. The process involves constructing a comprehensive SQL database, integrating data from multiple organizational sources (employees, salaries, departments, and projects), and developing dynamic SQL queries. The final result is a Power BI dashboard that delivers real-time insights into departmental efficiency, project health, salary distribution, and potential risk areas. Special focus is given to evaluating whether department budgets—set on a 2-year cycle—can sustain all operational costs within a fiscal year.
+
+Project Outcome:
+A robust SQL database schema unifying departmental, salary, and project data.
+
+Custom SQL queries to classify projects by status and associate them with departments and employees.
+
+A Power BI dashboard that:
+
+Flags underperforming or overbudget projects/departments.
+
+Visualizes employee performance metrics.
+
+Shows salary distribution across roles.
+
+Supports informed decision-making around budget allocation and project management.
+
+Project Workflow Recap:
+Build the Database – Consolidate employee, salary, department, and project data.
+
+Develop SQL Queries – Create logic to merge completed and upcoming project statuses and join this with employee and department data.
+
+Connect to Power BI – Use SQL views/queries to import clean, analytical datasets into Power BI.
+
+Build a Dashboard – Visualize risks, budget consumption, and project performance effectively.
+
+Key SQL Component Explanation:
+SQL Code Summary:
+
+The project_status CTE combines upcoming and completed projects into one unified table with a status tag.
+
+The final SELECT joins employee data with their project assignments and project status to create a comprehensive view of who is working on what, under which department, and how projects are performing.
+
+Two-line Insight:
+
+This SQL script creates a unified view of employee assignments across both upcoming and completed projects, enriched with salary and department context. It serves as the backbone for identifying high-risk projects or teams that may be overbudget or underdelivering.
